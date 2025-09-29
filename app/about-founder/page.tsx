@@ -101,62 +101,48 @@ export default function AboutFounderPage() {
             <CardContent>
               <div className="space-y-6 text-gray-700 leading-relaxed">
                 <p>
-                  In the summer before my sophomore year, my mother sat me down and told me that she had lipedema. All
-                  these years, I had seen her work out relentlessly and visit physicians with no clear indication of why
-                  her lower body was heavier, more painful, and more sensitive than her upper body. I was baffled by the
-                  lack of resources and support available for women living with lipedema.
+                  In the summer before my sophomore year, my mother told me she had lipedema. After years of watching
+                  her work out relentlessly and visit physicians with no clear answers about why her lower body was
+                  heavier, more painful, and more sensitive than her upper body, I was baffled by the lack of resources
+                  and support available for women living with this condition.
                 </p>
 
                 <p>
-                  Hearing this, I made it my mission to educate physicians and women alike about this disease and steps
-                  they can take to make their lives simpler. Lipedema is a fat disorder that affects around 11% of all
-                  women worldwide. As I researched about this condition, I realized how most women suffering from
-                  lipedema do not even know that they have it, and spend their lives battling chronic pain and mental
-                  health struggles. So, I started reaching out to women actively advocating for lipedema and conducted
-                  interviews to understand their concerns and what they believe needs to be changed. Most commented on
-                  the lack of doctor-based awareness while others talked about the lack of self-esteem and consequently
-                  high stigma.
+                  I made it my mission to educate physicians and women about this disease. Lipedema affects around 11%
+                  of all women worldwide, yet most don't even know they have it, spending their lives battling chronic
+                  pain and mental health struggles. I started reaching out to women advocating for lipedema and
+                  conducted interviews to understand their concerns. Most commented on the lack of doctor-based
+                  awareness while others talked about low self-esteem and high stigma.
                 </p>
 
                 <p>
-                  With their advice, I started my own nonprofit organization, The Lipedema Cognizance, focusing on
-                  raising awareness and providing accessible mental health support among women with lipedema. I
-                  initially started with a social-media campaign with targeted posts about lipedema and mental health
-                  support systems. 3 months into the social-media campaign, I only had 100 followers, but this number
-                  increased throughout the upcoming years. My posts mainly detailed information about the disease and
-                  the treatments, however, I then started experimenting with creative posts such as myth-busting, and
+                  With their advice, I founded The Lipedema Cognizance, focusing on raising awareness and providing
+                  accessible mental health support. I started with a social media campaign featuring targeted posts
+                  about lipedema and mental health support systems. My posts initially detailed information about the
+                  disease and treatments, but I then experimented with creative content like myth-busting and
                   motivational quotes.
                 </p>
 
                 <p>
-                  My research behind these posts showed me a gap in the patient-to-resource aspect. To improve this, I
-                  conducted archived interviews with lipedema-lifestyle social media influencers. In it, we talked about
-                  what can be improved with the current resources, the ongoing insurance problem, and how they manage
-                  their day-to-day lives along with lipedema. Listening to their experiences taught me that advocacy is
-                  not about speaking for others, but amplifying voices already speaking. I stopped approaching these
-                  interviews with a checklist–what resources they used, what the doctors saw, what needed to be
-                  improved—and simply heard what they were trying to say. I began asking different questions that led to
-                  stories, and not statistics. I understood the importance of creating spaces for others to speak.
+                  Through archived interviews with lipedema-lifestyle social media influencers, I learned that advocacy
+                  is not about speaking for others, but amplifying voices already speaking. I stopped approaching
+                  interviews with a checklist and simply listened. I began asking questions that led to stories, not
+                  statistics, and understood the importance of creating spaces for others to speak.
                 </p>
 
                 <p>
-                  One day, I received an email from a social media influencer. She recently got a lipedema diagnosis and
-                  wished for access to more treatment options, current available physicians, and other resources to
-                  navigate through her diagnosis. I spent the next 10-15 hours compiling a detailed resource
-                  guide—contact information for lipedema experts, summaries of treatment options, and online support
-                  groups. Though I never met her, our back-and-forth conversations reminded me that behind every
-                  statistic is someone navigating through pain and confusion. This experience grounded everything I was
-                  trying to build. It was not just an initiative or campaign, but a lifetime. In these moments, I was
-                  not a student or a founder. I was simply human—listening, learning, and trying to help someone feel
-                  less alone.
+                  One day, I received an email from a social media influencer who recently got a lipedema diagnosis. She
+                  needed access to treatment options, available physicians, and resources to navigate her diagnosis. I
+                  spent hours compiling a detailed resource guide—contact information for lipedema experts, treatment
+                  summaries, and online support groups. This experience reminded me that behind every statistic is
+                  someone navigating pain and confusion. It grounded everything I was trying to build.
                 </p>
 
                 <p>
                   I have seen how easy it is for someone suffering to go unnoticed—how women like my mother can spend
-                  years before learning the answers to the questions they seek. That is why I chose to continue to
-                  learn, listen, and help build something better. My work with lipedema taught me that change does not
-                  always accompany a cure, it starts with someone willing to ask better questions, and someone finally
-                  being seen.
+                  years before learning the answers they seek. That is why I continue to learn, listen, and help build
+                  something better. My work with lipedema taught me that change does not always accompany a cure—it
+                  starts with someone willing to ask better questions, and someone finally being seen.
                 </p>
               </div>
             </CardContent>
