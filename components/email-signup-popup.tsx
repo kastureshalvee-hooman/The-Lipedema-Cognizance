@@ -73,7 +73,7 @@ export function EmailSignupPopup() {
 
             <button
               onClick={handleClose}
-              className="w-full text-sm text-gray-500 hover:text-gray-700 transition-colors"
+              className="w-full text-sm text-gray-500 hover:text-gray-700 transition-colors pt-1"
             >
               Maybe later
             </button>

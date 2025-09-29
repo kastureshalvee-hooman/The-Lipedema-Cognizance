@@ -382,6 +382,26 @@ export default function HomePage() {
             </Card>
           </div>
 
+          {/* Email Signup Section */}
+          <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8 mb-8 border-2 border-green-200">
+            <div className="flex flex-col items-center">
+              <Mail className="h-12 w-12 text-green-600 mb-4" />
+              <h4 className="text-2xl font-bold text-slate-800 mb-3">Stay Updated</h4>
+              <p className="text-gray-600 mb-6 max-w-2xl text-center">
+                Join our mailing list to receive the latest updates on lipedema research, resources, community events,
+                and ways to get involved in our mission.
+              </p>
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-semibold"
+                onClick={() => window.open("https://forms.gle/HyxH6DZnmw8g2A5x6", "_blank")}
+              >
+                Sign Up for Updates
+                <Mail className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
+          </div>
+
           <Button
             size="lg"
             className="bg-green-600 hover:bg-green-700"
@@ -428,6 +448,25 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="bg-slate-800 text-white py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
+          {/* Email Signup Section */}
+          <div className="bg-gradient-to-r from-emerald-900/30 to-teal-900/30 rounded-2xl p-8 mb-12 border border-green-700/50">
+            <div className="text-center">
+              <Mail className="h-10 w-10 text-green-400 mx-auto mb-4" />
+              <h4 className="text-2xl font-bold mb-3">Join Our Community</h4>
+              <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+                Subscribe to receive updates, resources, and stories from The Lipedema Cognizance community.
+              </p>
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-semibold"
+                onClick={() => window.open("https://forms.gle/HyxH6DZnmw8g2A5x6", "_blank")}
+              >
+                Sign Up for Updates
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
