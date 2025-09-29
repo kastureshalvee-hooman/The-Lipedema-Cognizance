@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Playfair_Display } from "next/font/google"
 import "./globals.css"
+import { EmailSignupPopup } from "@/components/email-signup-popup"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -79,7 +80,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable} antialiased`}>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        {children}
+        <EmailSignupPopup />
+      </body>
     </html>
   )
 }
