@@ -10,41 +10,57 @@ export default function AboutFounderPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b">
+      <header className="bg-white shadow-md border-b-2 border-green-100 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center space-x-3">
-              <Link href="/">
-                <Image
-                  src="/images/tlc-logo.png"
-                  alt="The Lipedema Cognizance Logo"
-                  width={50}
-                  height={50}
-                  className="rounded-full cursor-pointer"
-                />
+          <div className="flex justify-between items-center py-5">
+            <Link href="/" className="flex items-center space-x-3 group">
+              <Image
+                src="/images/tlc-logo.png"
+                alt="The Lipedema Cognizance Logo"
+                width={50}
+                height={50}
+                className="rounded-full transition-transform group-hover:scale-105"
+              />
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-green-700 to-green-600 bg-clip-text text-transparent">
+                The Lipedema Cognizance
+              </h1>
+            </Link>
+            <nav className="hidden md:flex items-center space-x-1">
+              <Link
+                href="/"
+                className="px-4 py-2 rounded-lg text-gray-700 hover:text-green-600 hover:bg-green-50 transition-all font-medium"
+              >
+                Home
               </Link>
-              <Link href="/">
-                <h1 className="text-2xl font-bold text-slate-700 cursor-pointer">The Lipedema Cognizance</h1>
-              </Link>
-            </div>
-            <nav className="hidden md:flex space-x-8">
-              <Link href="/#about" className="text-gray-700 hover:text-green-600 transition-colors">
-                About
-              </Link>
-              <Link href="/what-is-lipedema" className="text-gray-700 hover:text-green-600 transition-colors">
+              <Link
+                href="/what-is-lipedema"
+                className="px-4 py-2 rounded-lg text-gray-700 hover:text-green-600 hover:bg-green-50 transition-all font-medium"
+              >
                 What is Lipedema?
               </Link>
-              <Link href="/blog" className="text-gray-700 hover:text-green-600 transition-colors">
+              <Link
+                href="/blog"
+                className="px-4 py-2 rounded-lg text-gray-700 hover:text-green-600 hover:bg-green-50 transition-all font-medium"
+              >
                 Blog
               </Link>
-              <Link href="/about-founder" className="text-green-600 font-medium">
+              <Link
+                href="/about-founder"
+                className="px-4 py-2 rounded-lg text-white bg-green-600 hover:bg-green-700 transition-all font-medium shadow-sm"
+              >
                 About the Founder
               </Link>
-              <Link href="/#volunteer" className="text-gray-700 hover:text-green-600 transition-colors">
-                Get Involved
+              <Link
+                href="/#resources"
+                className="px-4 py-2 rounded-lg text-gray-700 hover:text-green-600 hover:bg-green-50 transition-all font-medium"
+              >
+                Resources
               </Link>
-              <Link href="/#contact" className="text-gray-700 hover:text-green-600 transition-colors">
-                Contact
+              <Link
+                href="/#volunteer"
+                className="px-4 py-2 rounded-lg text-gray-700 hover:text-green-600 hover:bg-green-50 transition-all font-medium"
+              >
+                Get Involved
               </Link>
             </nav>
           </div>
@@ -79,35 +95,68 @@ export default function AboutFounderPage() {
             <CardHeader>
               <CardTitle className="flex items-center text-2xl">
                 <Heart className="h-6 w-6 mr-3 text-green-600" />
-                Shalvee Kasture - Founder
+                Shalvee's Journey
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="space-y-6">
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  I am <strong>Shalvee Kasture</strong>, a passionate high school student dedicated to transforming the
-                  lipedema landscape. My journey began when I first learned about lipedema through my mother, who
-                  courageously faces this condition herself. Witnessing her experience ignited a fire within me to make
-                  a difference.
+              <div className="space-y-6 text-gray-700 leading-relaxed">
+                <p>
+                  In the summer before my sophomore year, my mother sat me down and told me that she had lipedema. All
+                  these years, I had seen her work out relentlessly and visit physicians with no clear indication of why
+                  her lower body was heavier, more painful, and more sensitive than her upper body. I was baffled by the
+                  lack of resources and support available for women living with lipedema.
                 </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  Since that pivotal moment, I have dedicated countless hours to researching this misunderstood
-                  condition, gathering resources, and connecting with the lipedema community. What started as a personal
-                  mission to help my mother has evolved into a broader commitment to ensure no one faces lipedema
-                  without proper knowledge and support.
+
+                <p>
+                  Hearing this, I made it my mission to educate physicians and women alike about this disease and steps
+                  they can take to make their lives simpler. Lipedema is a fat disorder that affects around 11% of all
+                  women worldwide. As I researched about this condition, I realized how most women suffering from
+                  lipedema do not even know that they have it, and spend their lives battling chronic pain and mental
+                  health struggles. So, I started reaching out to women actively advocating for lipedema and conducted
+                  interviews to understand their concerns and what they believe needs to be changed. Most commented on
+                  the lack of doctor-based awareness while others talked about the lack of self-esteem and consequently
+                  high stigma.
                 </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  Through{" "}
-                  <a
-                    href="https://www.instagram.com/the_lipedema_cognizance/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-green-600 hover:text-green-800 underline"
-                  >
-                    @the_lipedema_cognizance
-                  </a>{" "}
-                  on Instagram, I've been able to reach over 34,000 people with educational content, building a
-                  community of 1,200+ followers who are passionate about lipedema awareness.
+
+                <p>
+                  With their advice, I started my own nonprofit organization, The Lipedema Cognizance, focusing on
+                  raising awareness and providing accessible mental health support among women with lipedema. I
+                  initially started with a social-media campaign with targeted posts about lipedema and mental health
+                  support systems. 3 months into the social-media campaign, I only had 100 followers, but this number
+                  increased throughout the upcoming years. My posts mainly detailed information about the disease and
+                  the treatments, however, I then started experimenting with creative posts such as myth-busting, and
+                  motivational quotes.
+                </p>
+
+                <p>
+                  My research behind these posts showed me a gap in the patient-to-resource aspect. To improve this, I
+                  conducted archived interviews with lipedema-lifestyle social media influencers. In it, we talked about
+                  what can be improved with the current resources, the ongoing insurance problem, and how they manage
+                  their day-to-day lives along with lipedema. Listening to their experiences taught me that advocacy is
+                  not about speaking for others, but amplifying voices already speaking. I stopped approaching these
+                  interviews with a checklist–what resources they used, what the doctors saw, what needed to be
+                  improved—and simply heard what they were trying to say. I began asking different questions that led to
+                  stories, and not statistics. I understood the importance of creating spaces for others to speak.
+                </p>
+
+                <p>
+                  One day, I received an email from a social media influencer. She recently got a lipedema diagnosis and
+                  wished for access to more treatment options, current available physicians, and other resources to
+                  navigate through her diagnosis. I spent the next 10-15 hours compiling a detailed resource
+                  guide—contact information for lipedema experts, summaries of treatment options, and online support
+                  groups. Though I never met her, our back-and-forth conversations reminded me that behind every
+                  statistic is someone navigating through pain and confusion. This experience grounded everything I was
+                  trying to build. It was not just an initiative or campaign, but a lifetime. In these moments, I was
+                  not a student or a founder. I was simply human—listening, learning, and trying to help someone feel
+                  less alone.
+                </p>
+
+                <p>
+                  I have seen how easy it is for someone suffering to go unnoticed—how women like my mother can spend
+                  years before learning the answers to the questions they seek. That is why I chose to continue to
+                  learn, listen, and help build something better. My work with lipedema taught me that change does not
+                  always accompany a cure, it starts with someone willing to ask better questions, and someone finally
+                  being seen.
                 </p>
               </div>
             </CardContent>

@@ -2,48 +2,65 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Heart, Users, Mail, Calendar, ArrowRight, BookOpen, Stethoscope, MessageCircle } from "lucide-react"
+import { Heart, Users, Mail, Calendar, ArrowRight, BookOpen, Stethoscope } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
-      {/* Header */}
-      <header className="bg-white shadow-sm border-b">
+      <header className="bg-white shadow-md border-b-2 border-green-100 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center space-x-3">
+          <div className="flex justify-between items-center py-5">
+            <div className="flex items-center space-x-3 group cursor-pointer">
               <Image
                 src="/images/tlc-logo.png"
                 alt="The Lipedema Cognizance Logo"
                 width={50}
                 height={50}
-                className="rounded-full"
+                className="rounded-full transition-transform group-hover:scale-105"
               />
-              <h1 className="text-2xl font-bold text-slate-700">The Lipedema Cognizance</h1>
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-green-700 to-green-600 bg-clip-text text-transparent">
+                The Lipedema Cognizance
+              </h1>
             </div>
-            <nav className="hidden md:flex space-x-8">
-              <a href="#about" className="text-gray-700 hover:text-green-600 transition-colors">
-                About
-              </a>
-              <a href="/what-is-lipedema" className="text-gray-700 hover:text-green-600 transition-colors">
+            <nav className="hidden md:flex items-center space-x-1">
+              <Link
+                href="/"
+                className="px-4 py-2 rounded-lg text-white bg-green-600 hover:bg-green-700 transition-all font-medium shadow-sm"
+              >
+                Home
+              </Link>
+              <Link
+                href="/what-is-lipedema"
+                className="px-4 py-2 rounded-lg text-gray-700 hover:text-green-600 hover:bg-green-50 transition-all font-medium"
+              >
                 What is Lipedema?
-              </a>
-              <a href="/blog" className="text-gray-700 hover:text-green-600 transition-colors">
+              </Link>
+              <Link
+                href="/blog"
+                className="px-4 py-2 rounded-lg text-gray-700 hover:text-green-600 hover:bg-green-50 transition-all font-medium"
+              >
                 Blog
-              </a>
-              <a href="/about-founder" className="text-gray-700 hover:text-green-600 transition-colors">
+              </Link>
+              <Link
+                href="/about-founder"
+                className="px-4 py-2 rounded-lg text-gray-700 hover:text-green-600 hover:bg-green-50 transition-all font-medium"
+              >
                 About the Founder
-              </a>
-              <a href="#resources" className="text-gray-700 hover:text-green-600 transition-colors">
-                Resources & Support
-              </a>
-              <a href="#volunteer" className="text-gray-700 hover:text-green-600 transition-colors">
+              </Link>
+              <Link
+                href="#resources"
+                className="px-4 py-2 rounded-lg text-gray-700 hover:text-green-600 hover:bg-green-50 transition-all font-medium"
+              >
+                Resources
+              </Link>
+              <Link
+                href="#volunteer"
+                className="px-4 py-2 rounded-lg text-gray-700 hover:text-green-600 hover:bg-green-50 transition-all font-medium"
+              >
                 Get Involved
-              </a>
-              <a href="#contact" className="text-gray-700 hover:text-green-600 transition-colors">
-                Contact
-              </a>
+              </Link>
             </nav>
           </div>
         </div>
@@ -128,62 +145,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h3 className="text-3xl font-bold text-slate-800 mb-4">Our Mission</h3>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Dedicated to educating communities, healthcare professionals, and people all around the world by unveiling
-              the veil of Lipedema.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="text-center border-green-200">
-              <CardHeader>
-                <BookOpen className="h-12 w-12 text-green-600 mx-auto mb-4" />
-                <CardTitle>Education</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Providing comprehensive resources and educational materials about lipedema for patients, families, and
-                  communities through social media and community outreach.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center border-green-200">
-              <CardHeader>
-                <Stethoscope className="h-12 w-12 text-green-600 mx-auto mb-4" />
-                <CardTitle>Awareness Campaigns</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Creating engaging content and campaigns to help medical professionals and the general public recognize
-                  and understand lipedema as a legitimate medical condition.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center border-green-200">
-              <CardHeader>
-                <MessageCircle className="h-12 w-12 text-green-600 mx-auto mb-4" />
-                <CardTitle>Community Building</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Fostering connections within the lipedema community through social media engagement and future support
-                  initiatives to ensure no one faces this journey alone.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* Resources & Support Section */}
-      <section id="resources" className="py-20 bg-green-50 px-4 sm:px-6 lg:px-8">
+      <section id="resources" className="py-20 bg-white px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h3 className="text-3xl font-bold text-slate-800 mb-4">Resources & Support</h3>
@@ -481,8 +444,8 @@ export default function HomePage() {
               <h5 className="font-semibold mb-4">Quick Links</h5>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <a href="#about" className="hover:text-white transition-colors">
-                    About Us
+                  <a href="/" className="hover:text-white transition-colors">
+                    Home
                   </a>
                 </li>
                 <li>
@@ -502,7 +465,7 @@ export default function HomePage() {
                 </li>
                 <li>
                   <a href="#resources" className="hover:text-white transition-colors">
-                    Resources & Support
+                    Resources
                   </a>
                 </li>
                 <li>
@@ -542,18 +505,8 @@ export default function HomePage() {
               <h5 className="font-semibold mb-4">Our Mission</h5>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <a href="#about" className="hover:text-white transition-colors">
+                  <a href="/what-is-lipedema" className="hover:text-white transition-colors">
                     Education & Awareness
-                  </a>
-                </li>
-                <li>
-                  <a href="#about" className="hover:text-white transition-colors">
-                    Community Building
-                  </a>
-                </li>
-                <li>
-                  <a href="#volunteer" className="hover:text-white transition-colors">
-                    Advocacy
                   </a>
                 </li>
                 <li>
