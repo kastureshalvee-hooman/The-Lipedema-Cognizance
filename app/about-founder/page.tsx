@@ -80,6 +80,17 @@ export default function AboutFounderPage() {
       {/* Hero Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
+          <div className="mb-8 flex justify-center">
+            <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-green-200 shadow-lg">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1710103224087-PjhTcxV9SelswfZ5FxjP7eiJQVbx37.jpg"
+                alt="Shalvee Kasture, Founder of The Lipedema Cognizance"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          </div>
           <h1 className="text-4xl font-bold text-slate-800 mb-6">About the Founder</h1>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
             Meet Shalvee Kasture, the passionate high school student behind The Lipedema Cognizance
