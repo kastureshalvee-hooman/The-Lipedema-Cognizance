@@ -110,11 +110,11 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold mb-2">31,000+</div>
+              <div className="text-4xl font-bold mb-2">34,000+</div>
               <div className="text-green-100">People Educated Through Social Media</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">1,100+</div>
+              <div className="text-4xl font-bold mb-2">1,200+</div>
               <div className="text-green-100">Instagram Followers</div>
             </div>
             <div>
@@ -136,36 +136,39 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* About the Founder section */}
+          {/* About the Team section */}
           <div className="mb-16">
             <div className="max-w-4xl mx-auto">
-              <h4 className="text-2xl font-bold text-slate-800 mb-6 text-center">About the Founder</h4>
+              <h4 className="text-2xl font-bold text-slate-800 mb-6 text-center">About The Team</h4>
               <div className="bg-green-50 rounded-lg p-8 border border-green-100">
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  I am <strong>Shalvee Kasture</strong>, a passionate high school student dedicated to transforming the
-                  lipedema landscape. My journey began when I first learned about lipedema through my mother, who
-                  courageously faces this condition herself. Witnessing her experience ignited a fire within me to make
-                  a difference.
-                </p>
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Since that pivotal moment, I have dedicated countless hours to researching this misunderstood
-                  condition, gathering resources, and connecting with the lipedema community. What started as a personal
-                  mission to help my mother has evolved into a broader commitment to ensure no one faces lipedema
-                  without proper knowledge and support.
-                </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  Through{" "}
-                  <a
-                    href="https://www.instagram.com/the_lipedema_cognizance/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-green-600 hover:text-green-800 underline"
-                  >
-                    @the_lipedema_cognizance
-                  </a>{" "}
-                  on Instagram, I've been able to reach over 31,000 people with educational content, building a
-                  community of 1,100+ followers who are passionate about lipedema awareness.
-                </p>
+                <div className="mb-8">
+                  <h5 className="text-xl font-semibold text-slate-800 mb-4">Founder: Shalvee Kasture</h5>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    I am <strong>Shalvee Kasture</strong>, a passionate high school student dedicated to transforming
+                    the lipedema landscape. My journey began when I first learned about lipedema through my mother, who
+                    courageously faces this condition herself. Witnessing her experience ignited a fire within me to
+                    make a difference.
+                  </p>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    Since that pivotal moment, I have dedicated countless hours to researching this misunderstood
+                    condition, gathering resources, and connecting with the lipedema community. What started as a
+                    personal mission to help my mother has evolved into a broader commitment to ensure no one faces
+                    lipedema without proper knowledge and support.
+                  </p>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    Through{" "}
+                    <a
+                      href="https://www.instagram.com/the_lipedema_cognizance/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-green-600 hover:text-green-800 underline"
+                    >
+                      @the_lipedema_cognizance
+                    </a>{" "}
+                    on Instagram, I've been able to reach over 34,000 people with educational content, building a
+                    community of 1,200+ followers who are passionate about lipedema awareness.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
