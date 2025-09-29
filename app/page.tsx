@@ -32,6 +32,9 @@ export default function HomePage() {
               <a href="/blog" className="text-gray-700 hover:text-green-600 transition-colors">
                 Blog
               </a>
+              <a href="/about-founder" className="text-gray-700 hover:text-green-600 transition-colors">
+                About the Founder
+              </a>
               <a href="#resources" className="text-gray-700 hover:text-green-600 transition-colors">
                 Resources & Support
               </a>
@@ -134,82 +137,6 @@ export default function HomePage() {
               Dedicated to educating communities, healthcare professionals, and people all around the world by unveiling
               the veil of Lipedema.
             </p>
-          </div>
-
-          {/* About the Team section */}
-          <div className="mb-16">
-            <div className="max-w-4xl mx-auto">
-              <h4 className="text-2xl font-bold text-slate-800 mb-6 text-center">About The Team</h4>
-              <div className="bg-green-50 rounded-lg p-8 border border-green-100">
-                <div className="mb-8">
-                  <h5 className="text-xl font-semibold text-slate-800 mb-4">Founder: Shalvee Kasture</h5>
-                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                    I am <strong>Shalvee Kasture</strong>, a passionate high school student dedicated to transforming
-                    the lipedema landscape. My journey began when I first learned about lipedema through my mother, who
-                    courageously faces this condition herself. Witnessing her experience ignited a fire within me to
-                    make a difference.
-                  </p>
-                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                    Since that pivotal moment, I have dedicated countless hours to researching this misunderstood
-                    condition, gathering resources, and connecting with the lipedema community. What started as a
-                    personal mission to help my mother has evolved into a broader commitment to ensure no one faces
-                    lipedema without proper knowledge and support.
-                  </p>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    Through{" "}
-                    <a
-                      href="https://www.instagram.com/the_lipedema_cognizance/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-green-600 hover:text-green-800 underline"
-                    >
-                      @the_lipedema_cognizance
-                    </a>{" "}
-                    on Instagram, I've been able to reach over 34,000 people with educational content, building a
-                    community of 1,200+ followers who are passionate about lipedema awareness.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Future Vision section */}
-          <div className="mb-16">
-            <div className="max-w-4xl mx-auto text-center">
-              <h4 className="text-2xl font-bold text-slate-800 mb-6">Our Vision for the Future</h4>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <Card className="text-left border-green-200">
-                  <CardHeader>
-                    <CardTitle className="flex items-center">
-                      <Heart className="h-5 w-5 mr-2 text-green-600" />
-                      Lipedema Awareness Kits
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600">
-                      Distributing comprehensive lipedema education kits throughout our neighborhood and beyond,
-                      ensuring families have access to vital information about recognition, management, and support
-                      resources.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="text-left border-green-200">
-                  <CardHeader>
-                    <CardTitle className="flex items-center">
-                      <Users className="h-5 w-5 mr-2 text-green-600" />
-                      Community Expansion
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600">
-                      Building a global network of young advocates and establishing partnerships with healthcare
-                      providers to create lasting change in how lipedema is understood and treated worldwide.
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -566,6 +493,11 @@ export default function HomePage() {
                 <li>
                   <a href="/blog" className="hover:text-white transition-colors">
                     Blog
+                  </a>
+                </li>
+                <li>
+                  <a href="/about-founder" className="hover:text-white transition-colors">
+                    About the Founder
                   </a>
                 </li>
                 <li>
