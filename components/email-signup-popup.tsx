@@ -8,8 +8,7 @@ export function EmailSignupPopup() {
   const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
-    // Check if user has already dismissed the popup
-    const hasSeenPopup = localStorage.getItem("hasSeenEmailPopup")
+    const hasSeenPopup = sessionStorage.getItem("hasSeenEmailPopup")
 
     if (!hasSeenPopup) {
       // Show popup after a short delay
@@ -23,7 +22,7 @@ export function EmailSignupPopup() {
 
   const handleClose = () => {
     setIsOpen(false)
-    localStorage.setItem("hasSeenEmailPopup", "true")
+    sessionStorage.setItem("hasSeenEmailPopup", "true")
   }
 
   if (!isOpen) return null
@@ -59,7 +58,7 @@ export function EmailSignupPopup() {
             </p>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-2">
             <a
               href="https://forms.gle/HyxH6DZnmw8g2A5x6"
               target="_blank"

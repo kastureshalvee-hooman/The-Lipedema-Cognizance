@@ -135,18 +135,18 @@ export default function AboutFounderPage() {
                 </p>
 
                 <p>
-                  Through archived interviews with lipedema-lifestyle social media influencers, I learned that advocacy
-                  is not about speaking for others, but amplifying voices already speaking. I stopped approaching
-                  interviews with a checklist and simply listened. I began asking questions that led to stories, not
-                  statistics, and understood the importance of creating spaces for others to speak.
+                  Through my interviews with advocates, I learned that advocacy is not about speaking for others, but
+                  amplifying voices already speaking. I stopped approaching interviews with a checklist and simply
+                  listened. I began asking questions that led to stories, not statistics, and understood the importance
+                  of creating spaces for others to speak.
                 </p>
 
                 <p>
-                  One day, I received an email from a social media influencer who recently got a lipedema diagnosis. She
-                  needed access to treatment options, available physicians, and resources to navigate her diagnosis. I
-                  spent hours compiling a detailed resource guide—contact information for lipedema experts, treatment
-                  summaries, and online support groups. This experience reminded me that behind every statistic is
-                  someone navigating pain and confusion. It grounded everything I was trying to build.
+                  One day, I received an email from someone who recently got a lipedema diagnosis. She needed access to
+                  treatment options, available physicians, and resources to navigate her diagnosis. I spent hours
+                  compiling a detailed resource guide—contact information for lipedema experts, treatment summaries, and
+                  online support groups. This experience reminded me that behind every statistic is someone navigating
+                  pain and confusion. It grounded everything I was trying to build.
                 </p>
 
                 <p>
@@ -203,13 +203,39 @@ export default function AboutFounderPage() {
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-slate-800 mb-2 text-lg">Future Goals</h4>
+                  <h4 className="font-semibold text-slate-800 mb-2 text-lg">Looking Ahead</h4>
+                  <p className="text-gray-700 leading-relaxed mb-3">
+                    As The Lipedema Cognizance continues to grow, I envision expanding our impact through strategic
+                    initiatives that bring lipedema awareness directly to communities and healthcare systems:
+                  </p>
                   <ul className="list-disc list-inside space-y-2 text-gray-700">
-                    <li>Distribute comprehensive lipedema education kits throughout neighborhoods and communities</li>
-                    <li>Build a global network of young advocates passionate about lipedema awareness</li>
-                    <li>Establish partnerships with healthcare providers to improve diagnosis and treatment</li>
-                    <li>Create lasting change in how lipedema is understood and treated worldwide</li>
+                    <li>
+                      Developing comprehensive lipedema education kits to distribute throughout neighborhoods, community
+                      centers, and healthcare facilities
+                    </li>
+                    <li>
+                      Building a global network of young advocates passionate about lipedema awareness and creating
+                      youth-led chapters worldwide
+                    </li>
+                    <li>
+                      Establishing partnerships with medical schools and healthcare providers to integrate lipedema
+                      education into medical training
+                    </li>
+                    <li>
+                      Creating accessible resources in multiple languages to reach underserved communities globally
+                    </li>
+                    <li>
+                      Hosting community workshops and webinars that connect patients with specialists and support
+                      networks
+                    </li>
+                    <li>
+                      Advocating for policy changes that improve insurance coverage and access to lipedema treatment
+                    </li>
                   </ul>
+                  <p className="text-gray-700 leading-relaxed mt-3">
+                    My goal is to create lasting systemic change in how lipedema is understood, diagnosed, and treated
+                    worldwide—ensuring that no one has to wait years for answers like my mother did.
+                  </p>
                 </div>
               </div>
             </CardContent>
