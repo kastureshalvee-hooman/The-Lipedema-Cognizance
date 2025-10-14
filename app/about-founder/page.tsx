@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowLeft, Heart, Users, Instagram } from "lucide-react"
+import { ArrowLeft, Heart, Users, Instagram, Linkedin } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -92,9 +92,18 @@ export default function AboutFounderPage() {
             </div>
           </div>
           <h1 className="text-4xl font-bold text-slate-800 mb-6">About the Founder</h1>
-          <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+          <p className="text-xl text-gray-600 mb-4 leading-relaxed">
             Meet Shalvee Kasture, the passionate high school student behind The Lipedema Cognizance
           </p>
+          <Button
+            size="lg"
+            variant="outline"
+            className="border-green-600 text-green-600 hover:bg-green-50 bg-transparent"
+            onClick={() => window.open("https://www.linkedin.com/in/shalvee-kasture-949461213/", "_blank")}
+          >
+            <Linkedin className="mr-2 h-5 w-5" />
+            Connect with Shalvee on LinkedIn
+          </Button>
         </div>
       </section>
 
@@ -110,50 +119,30 @@ export default function AboutFounderPage() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="space-y-6 text-gray-700 leading-relaxed">
+              <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
                   In the summer before my sophomore year, my mother told me she had lipedema. After years of watching
-                  her work out relentlessly and visit physicians with no clear answers about why her lower body was
-                  heavier, more painful, and more sensitive than her upper body, I was baffled by the lack of resources
-                  and support available for women living with this condition.
+                  her struggle with chronic pain and visiting physicians with no clear answers, I was baffled by the
+                  lack of resources and support available for women living with this condition.
                 </p>
 
                 <p>
                   I made it my mission to educate physicians and women about this disease. Lipedema affects around 11%
-                  of all women worldwide, yet most don't even know they have it, spending their lives battling chronic
-                  pain and mental health struggles. I started reaching out to women advocating for lipedema and
-                  conducted interviews to understand their concerns. Most commented on the lack of doctor-based
-                  awareness while others talked about low self-esteem and high stigma.
+                  of all women worldwide, yet most don't even know they have it. I started reaching out to women
+                  advocating for lipedema and conducted interviews to understand their concerns.
                 </p>
 
                 <p>
                   With their advice, I founded The Lipedema Cognizance, focusing on raising awareness and providing
-                  accessible mental health support. I started with a social media campaign featuring targeted posts
-                  about lipedema and mental health support systems. My posts initially detailed information about the
-                  disease and treatments, but I then experimented with creative content like myth-busting and
-                  motivational quotes.
+                  accessible mental health support. Through my interviews, I learned that advocacy is about amplifying
+                  voices already speaking, not speaking for others.
                 </p>
 
                 <p>
-                  Through my interviews with advocates, I learned that advocacy is not about speaking for others, but
-                  amplifying voices already speaking. I stopped approaching interviews with a checklist and simply
-                  listened. I began asking questions that led to stories, not statistics, and understood the importance
-                  of creating spaces for others to speak.
-                </p>
-
-                <p>
-                  One day, I received an email from someone who recently got a lipedema diagnosis. She needed access to
-                  treatment options, available physicians, and resources to navigate her diagnosis. I spent hours
-                  compiling a detailed resource guide—contact information for lipedema experts, treatment summaries, and
-                  online support groups. This experience reminded me that behind every statistic is someone navigating
-                  pain and confusion. It grounded everything I was trying to build.
-                </p>
-
-                <p>
-                  I have seen how easy it is for someone suffering to go unnoticed—how women like my mother can spend
-                  years before learning the answers they seek. That is why I continue to learn, listen, and help build
-                  something better. My work with lipedema taught me that change does not always accompany a cure—it
-                  starts with someone willing to ask better questions, and someone finally being seen.
+                  One day, I received an email from someone who recently got a lipedema diagnosis. I spent hours
+                  compiling a detailed resource guide for her. This experience reminded me that behind every statistic
+                  is someone navigating pain and confusion, and that is why I continue to learn, listen, and help build
+                  something better.
                 </p>
               </div>
             </CardContent>
@@ -256,6 +245,15 @@ export default function AboutFounderPage() {
               >
                 <Instagram className="mr-2 h-5 w-5" />
                 Follow on Instagram
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-green-600 text-green-600 hover:bg-green-50 bg-transparent"
+                onClick={() => window.open("https://www.linkedin.com/in/shalvee-kasture-949461213/", "_blank")}
+              >
+                <Linkedin className="mr-2 h-5 w-5" />
+                Connect with Shalvee on LinkedIn
               </Button>
               <Button
                 size="lg"

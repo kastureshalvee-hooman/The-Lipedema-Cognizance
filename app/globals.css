@@ -145,6 +145,14 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Disable text selection */
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 /* Focus styles for accessibility */
 button:focus-visible,
 a:focus-visible {
