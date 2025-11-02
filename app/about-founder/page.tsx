@@ -156,7 +156,7 @@ export default function AboutFounderPage() {
                 <CardTitle className="text-lg">People Reached</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-3xl font-bold text-slate-800 mb-2">34,000+</div>
+                <div className="text-3xl font-bold text-slate-800 mb-2">39,000+</div>
                 <p className="text-gray-600">Educated through social media content and awareness campaigns</p>
               </CardContent>
             </Card>

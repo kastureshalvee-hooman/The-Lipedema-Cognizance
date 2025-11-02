@@ -130,7 +130,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold mb-2">34,000+</div>
+              <div className="text-4xl font-bold mb-2">39,000+</div>
               <div className="text-green-100">People Educated Through Social Media</div>
             </div>
             <div>
@@ -141,6 +141,42 @@ export default function HomePage() {
               <div className="text-4xl font-bold mb-2">Growing</div>
               <div className="text-green-100">Community Impact</div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Coming Soon Teaser */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-emerald-50 via-teal-50 to-green-50 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwMGE5NmUiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE2YzAtMi4yMSAxLjc5LTQgNC00czQgMS43OSA0IDQtMS43OSA0LTQgNC00LTEuNzktNC00ek0xMiAxNmMwLTIuMjEgMS43OS00IDQtNHM0IDEuNzkgNCA0LTEuNzkgNC00IDQtNC0xLjc5LTQtNHptMCAyNGMwLTIuMjEgMS43OS00IDQtNHM0IDEuNzkgNCA0LTEuNzkgNC00IDQtNC0xLjc5LTQtNHoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-40"></div>
+        <div className="max-w-4xl mx-auto text-center relative z-10">
+          <div className="inline-block mb-6">
+            <span className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-6 py-2 rounded-full text-sm font-bold tracking-wide shadow-lg animate-pulse">
+              COMING SOON
+            </span>
+          </div>
+
+          <div className="mb-8">
+            <BookOpen className="h-20 w-20 text-green-600 mx-auto mb-6 animate-bounce" />
+            <h3 className="text-4xl font-bold text-slate-800 mb-4">Something Special is on the Way...</h3>
+            <p className="text-xl text-gray-700 mb-6 leading-relaxed max-w-2xl mx-auto">
+              We're working on an exciting new resource to help you better understand and navigate your lipedema
+              journey.
+              <span className="block mt-2 text-green-700 font-semibold">Stay tuned for our upcoming launch.</span>
+            </p>
+          </div>
+
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border-2 border-green-200 max-w-2xl mx-auto">
+            <p className="text-gray-700 mb-6 text-lg">
+              Be the first to know when we launch. Sign up for updates and get exclusive early access.
+            </p>
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold shadow-lg transform hover:scale-105 transition-all"
+              onClick={() => window.open("https://forms.gle/HyxH6DZnmw8g2A5x6", "_blank")}
+            >
+              Get Notified
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
           </div>
         </div>
       </section>
