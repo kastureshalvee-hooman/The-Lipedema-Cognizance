@@ -141,34 +141,21 @@ export default function AboutFounderPage() {
             <CardContent>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  Hey! I'm Shalvee, and honestly, I never imagined I'd be running an organization in high school. But
-                  life has a funny way of pushing you toward what matters.
+                  Hi, I'm Shalvee Kasture, and I never would have imagined running an organization as a high schooler.
+                  But after hearing the stories of women with lipedema and hearing my own mother's story, I became
+                  completely focused on finding the best ways to support this amazing community. Whether it is posting
+                  about lipedema research, sharing tips, or creating resources, my main goal has always been helping as
+                  many people as I can.
                 </p>
 
                 <p>
-                  The summer before my sophomore year, my mom told me she had lipedema. For years, I watched her deal
-                  with chronic pain and visit doctor after doctor with no real answers. When we finally learned what it
-                  was, I couldn't believe how little information and support existed for something that affects 11% of
-                  women worldwide.
+                  It is incredibly comforting to see how much lipedema research is growing today, and it is amazing to
+                  watch the momentum this community has built. I hope to keep contributing to that, whether through the
+                  resources I create now or through future work as a researcher.
                 </p>
 
                 <p>
-                  That's when I knew I had to do something. I started reaching out to women living with lipedema,
-                  listening to their stories, and learning what they actually needed. Through those conversations, I
-                  realized advocacy isn't about speaking for people—it's about amplifying the voices already there.
-                </p>
-
-                <p>
-                  One day, I got an email from someone who'd just been diagnosed. She was scared and didn't know where
-                  to start. I spent hours putting together a resource guide for her, and that moment reminded me why I
-                  started this. Behind every statistic is a real person navigating pain and confusion, and if I can help
-                  even one person feel a little less alone, it's worth it.
-                </p>
-
-                <p>
-                  I'm still learning every day—from the incredible women I interview, from medical research, and from
-                  the community we're building together. This isn't just about raising awareness; it's about creating
-                  real change for people like my mom.
+                  I am excited to see how everything continues to grow, and I am grateful to be a part of it. Thank you.
                 </p>
               </div>
             </CardContent>
