@@ -96,7 +96,7 @@ export default function BlogPage() {
       setViewCounts(JSON.parse(savedViews))
     } else {
       const initialViews = {
-        7: 500, // Latest: Lipedema vs Lymphedema post
+        7: 600, // Latest: Lipedema vs Lymphedema post
         1: 567, // Hereditary Side
         2: 423, // Waterjet Research
         3: 1089, // Mental Health (the 1000+ post)
