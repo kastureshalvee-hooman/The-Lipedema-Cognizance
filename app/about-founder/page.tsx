@@ -2,13 +2,33 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowLeft, Heart, Users, Instagram, Linkedin } from "lucide-react"
+import { ArrowLeft, Heart, Users, Instagram, Linkedin, BookOpen, ArrowRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
 export default function AboutFounderPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+      <div className="bg-gradient-to-r from-emerald-600 via-green-600 to-teal-600 py-3 px-4 text-center">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-3">
+          <div className="flex items-center gap-2">
+            <BookOpen className="h-5 w-5 text-white" />
+            <p className="text-white font-semibold text-sm sm:text-base">
+              NEW E-BOOK: Your Lipedema Advocate - Educating Providers, Empowering Women
+            </p>
+          </div>
+          <Button
+            size="sm"
+            variant="secondary"
+            className="bg-white text-green-600 hover:bg-green-50 font-semibold shadow-md"
+            onClick={() => window.open("https://online.flippingbook.com/view/19340440/", "_blank")}
+          >
+            Read Now
+            <ArrowRight className="ml-1 h-4 w-4" />
+          </Button>
+        </div>
+      </div>
+
       {/* Header */}
       <header className="bg-white shadow-md border-b-2 border-green-100 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -83,7 +103,7 @@ export default function AboutFounderPage() {
           <div className="mb-8 flex justify-center">
             <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-green-200 shadow-lg">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1710103224087-PjhTcxV9SelswfZ5FxjP7eiJQVbx37.jpg"
+                src="/images/1710103224087.jpg"
                 alt="Shalvee Kasture, Founder of The Lipedema Cognizance"
                 fill
                 className="object-cover"
@@ -115,34 +135,40 @@ export default function AboutFounderPage() {
             <CardHeader>
               <CardTitle className="flex items-center text-2xl">
                 <Heart className="h-6 w-6 mr-3 text-green-600" />
-                Shalvee's Journey
+                My Story
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  In the summer before my sophomore year, my mother told me she had lipedema. After years of watching
-                  her struggle with chronic pain and visiting physicians with no clear answers, I was baffled by the
-                  lack of resources and support available for women living with this condition.
+                  Hey! I'm Shalvee, and honestly, I never imagined I'd be running an organization in high school. But
+                  life has a funny way of pushing you toward what matters.
                 </p>
 
                 <p>
-                  I made it my mission to educate physicians and women about this disease. Lipedema affects around 11%
-                  of all women worldwide, yet most don't even know they have it. I started reaching out to women
-                  advocating for lipedema and conducted interviews to understand their concerns.
+                  The summer before my sophomore year, my mom told me she had lipedema. For years, I watched her deal
+                  with chronic pain and visit doctor after doctor with no real answers. When we finally learned what it
+                  was, I couldn't believe how little information and support existed for something that affects 11% of
+                  women worldwide.
                 </p>
 
                 <p>
-                  With their advice, I founded The Lipedema Cognizance, focusing on raising awareness and providing
-                  accessible mental health support. Through my interviews, I learned that advocacy is about amplifying
-                  voices already speaking, not speaking for others.
+                  That's when I knew I had to do something. I started reaching out to women living with lipedema,
+                  listening to their stories, and learning what they actually needed. Through those conversations, I
+                  realized advocacy isn't about speaking for people—it's about amplifying the voices already there.
                 </p>
 
                 <p>
-                  One day, I received an email from someone who recently got a lipedema diagnosis. I spent hours
-                  compiling a detailed resource guide for her. This experience reminded me that behind every statistic
-                  is someone navigating pain and confusion, and that is why I continue to learn, listen, and help build
-                  something better.
+                  One day, I got an email from someone who'd just been diagnosed. She was scared and didn't know where
+                  to start. I spent hours putting together a resource guide for her, and that moment reminded me why I
+                  started this. Behind every statistic is a real person navigating pain and confusion, and if I can help
+                  even one person feel a little less alone, it's worth it.
+                </p>
+
+                <p>
+                  I'm still learning every day—from the incredible women I interview, from medical research, and from
+                  the community we're building together. This isn't just about raising awareness; it's about creating
+                  real change for people like my mom.
                 </p>
               </div>
             </CardContent>

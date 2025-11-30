@@ -2,13 +2,35 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Heart, Users, Mail, Calendar, ArrowRight, BookOpen, Stethoscope } from "lucide-react"
+import { Heart, Users, Mail, Calendar, ArrowRight, BookOpen, Stethoscope, ExternalLink } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+      {/* E-book Banner - Above Navigation */}
+      <div className="bg-gradient-to-r from-emerald-600 via-green-600 to-teal-600 py-3 px-4 text-center">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-3">
+          <div className="flex items-center gap-2">
+            <BookOpen className="h-5 w-5 text-white" />
+            <p className="text-white font-semibold text-sm sm:text-base">
+              NEW E-BOOK: Your Lipedema Advocate - Educating Providers, Empowering Women
+            </p>
+          </div>
+          <Button
+            size="sm"
+            variant="secondary"
+            className="bg-white text-green-600 hover:bg-green-50 font-semibold shadow-md"
+            onClick={() => window.open("https://online.flippingbook.com/view/19340440/", "_blank")}
+          >
+            Read Now
+            <ArrowRight className="ml-1 h-4 w-4" />
+          </Button>
+        </div>
+      </div>
+
+      {/* Header */}
       <header className="bg-white shadow-md border-b-2 border-green-100 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-5">
@@ -130,7 +152,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold mb-2">39,000+</div>
+              <div className="text-4xl font-bold mb-2">41,000+</div>
               <div className="text-green-100">People Educated Through Social Media</div>
             </div>
             <div>
@@ -145,38 +167,56 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Coming Soon Teaser */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-emerald-50 via-teal-50 to-green-50 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwMGE5NmUiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE2YzAtMi4yMSAxLjc5LTQgNC00czQgMS43OSA0IDQtMS43OSA0LTQgNC00LTEuNzktNC00ek0xMiAxNmMwLTIuMjEgMS43OS00IDQtNHM0IDEuNzkgNCA0LTEuNzkgNC00IDQtNC0xLjc5LTQtNHptMCAyNGMwLTIuMjEgMS43OS00IDQtNHM0IDEuNzkgNCA0LTEuNzkgNC00IDQtNC0xLjc5LTQtNHoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-40"></div>
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <div className="inline-block mb-6">
-            <span className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-6 py-2 rounded-full text-sm font-bold tracking-wide shadow-lg animate-pulse">
-              COMING SOON
-            </span>
-          </div>
-
-          <div className="mb-8">
-            <BookOpen className="h-20 w-20 text-green-600 mx-auto mb-6 animate-bounce" />
-            <h3 className="text-4xl font-bold text-slate-800 mb-4">Something Special is on the Way...</h3>
-            <p className="text-xl text-gray-700 mb-6 leading-relaxed max-w-2xl mx-auto">
-              We're working on an exciting new resource to help you better understand and navigate your lipedema
-              journey.
-              <span className="block mt-2 text-green-700 font-semibold">Stay tuned for our upcoming launch.</span>
-            </p>
-          </div>
-
-          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border-2 border-green-200 max-w-2xl mx-auto">
-            <p className="text-gray-700 mb-6 text-lg">
-              Be the first to know when we launch. Sign up for updates and get exclusive early access.
-            </p>
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold shadow-lg transform hover:scale-105 transition-all"
-              onClick={() => window.open("https://forms.gle/HyxH6DZnmw8g2A5x6", "_blank")}
-            >
-              Get Notified
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+      {/* E-book Banner */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-emerald-600 via-green-600 to-teal-600 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMTZjMC0yLjIxIDEuNzktNCA0LTRzNCAxLjc5IDQgNC0xLjc5IDQtNCA0LTQtMS43OS00LTR6TTEyIDE2YzAtMi4yMSAxLjc5LTQgNC00czQgMS43OSA0IDQtMS43OSA0LTQgNC00LTEuNzktNC00em0wIDI0YzAtMi4yMSAxLjc5LTQgNC00czQgMS43OSA0IDQtMS43OSA0LTQgNC00LTEuNzktNC00eiIvPjwvZz48L2c+PC9zdmc+')] opacity-30"></div>
+        <div className="max-w-6xl mx-auto relative z-10">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            <div className="flex-1 text-white">
+              <div className="inline-block mb-4">
+                <span className="bg-white/20 backdrop-blur-sm text-white px-6 py-2 rounded-full text-sm font-bold tracking-wide border border-white/30">
+                  NEW E-BOOK AVAILABLE
+                </span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance leading-tight">
+                Your Lipedema Advocate: Educating Providers Empowering Women
+              </h2>
+              <p className="text-2xl mb-2 text-emerald-50 font-semibold">With Holly Dionisi of "The Grounded Body"</p>
+              <p className="text-lg mb-4 text-emerald-100 italic">Holistic Nutritionist</p>
+              <p className="text-white/90 leading-relaxed mb-6 max-w-2xl">
+                A comprehensive guide to help patients and providers better understand and manage lipedema. Rooted in
+                patient-centered care and the belief that healing happens best through collaboration, education, and
+                support.
+              </p>
+            </div>
+            <div className="flex-shrink-0">
+              <div className="bg-white rounded-2xl p-8 shadow-2xl max-w-md">
+                <BookOpen className="h-16 w-16 text-green-600 mx-auto mb-4" />
+                <h3 className="text-2xl font-bold text-slate-800 mb-4 text-center">Read the E-book</h3>
+                <p className="text-gray-600 mb-6 text-center">
+                  Access this valuable resource and empower yourself with knowledge about lipedema.
+                </p>
+                <div className="space-y-3">
+                  <Button
+                    size="lg"
+                    className="w-full bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-700 hover:to-green-700 text-white font-bold shadow-lg transform hover:scale-105 transition-all"
+                    onClick={() => window.open("https://online.flippingbook.com/view/19340440/", "_blank")}
+                  >
+                    Read E-book Now
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="w-full border-2 border-green-600 text-green-600 hover:bg-green-50 font-semibold bg-transparent"
+                    onClick={() => window.open("https://www.thegroundedbody.com/", "_blank")}
+                  >
+                    Visit The Grounded Body
+                    <ExternalLink className="ml-2 h-5 w-5" />
+                  </Button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
