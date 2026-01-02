@@ -21,7 +21,12 @@ export default function AboutFounderPage() {
             size="sm"
             variant="secondary"
             className="bg-white text-green-600 hover:bg-green-50 font-semibold shadow-md"
-            onClick={() => window.open("https://online.flippingbook.com/view/19340440/", "_blank")}
+            onClick={() =>
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLSeivrLjC4jqRNJNwV0MZH5P5Olg3cxCvw1oLWzCWB7s6z1jFg/viewform?usp=header",
+                "_blank",
+              )
+            }
           >
             Read Now
             <ArrowRight className="ml-1 h-4 w-4" />

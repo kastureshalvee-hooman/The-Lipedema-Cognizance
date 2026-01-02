@@ -22,7 +22,12 @@ export default function HomePage() {
             size="sm"
             variant="secondary"
             className="bg-white text-green-600 hover:bg-green-50 font-semibold shadow-md"
-            onClick={() => window.open("https://online.flippingbook.com/view/19340440/", "_blank")}
+            onClick={() =>
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLSeivrLjC4jqRNJNwV0MZH5P5Olg3cxCvw1oLWzCWB7s6z1jFg/viewform?usp=header",
+                "_blank",
+              )
+            }
           >
             Read Now
             <ArrowRight className="ml-1 h-4 w-4" />
@@ -200,7 +205,12 @@ export default function HomePage() {
                   <Button
                     size="lg"
                     className="w-full bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-700 hover:to-green-700 text-white font-bold shadow-lg transform hover:scale-105 transition-all"
-                    onClick={() => window.open("https://online.flippingbook.com/view/19340440/", "_blank")}
+                    onClick={() =>
+                      window.open(
+                        "https://docs.google.com/forms/d/e/1FAIpQLSeivrLjC4jqRNJNwV0MZH5P5Olg3cxCvw1oLWzCWB7s6z1jFg/viewform?usp=header",
+                        "_blank",
+                      )
+                    }
                   >
                     Read E-book Now
                     <ArrowRight className="ml-2 h-5 w-5" />
